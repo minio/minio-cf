@@ -64,7 +64,9 @@ EXAMPLES:
 `
 
 	app.Action = func(ctx *cli.Context) {
-		if len(ctx.Args()) == 0 {
+		accessKey := ctx.GlobalString("access-key")
+		secretKey := ctx.GlobalString("secret-key")
+		if accessKey == "" || secretKey == "" {
 			cli.ShowAppHelpAndExit(ctx, 1)
 		}
 		m := make(map[string]string)
