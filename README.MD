@@ -3,6 +3,8 @@ minio-cf - Minio CF Tool
 
 Minio tool to be used with Pivotal "cf" tool to generate the config for create-service command.
 
+Please download the minio-cf tool for your desktop (amd64) from [here](https://github.com/minio/minio-cf/releases)
+
 EXAMPLES:
 --------
 Deploy Minio Server instance
